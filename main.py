@@ -9,12 +9,12 @@ def Course_Monitor():
 
     from discordwebhook import Discord
 
-    discord = Discord(url="https://discord.com/api/webhooks/1125859637128876104/Kl18CbUDvzuyy6qKQfQTrhwBiFp6A_IzsQISlH9ixG56deESTv_RMcixggMgRJg1CYSC")
+    discord = Discord(url="<web hook url>")
     service = Service('./chromedriver.exe')
     driver = webdriver.Chrome(service=service)
     printcount = 0
 
-    courses = {"CPSC":"121", "CPSC":"210"}
+    courses = {"Department Abbreviation": "Course Number"}
 
     for dept, course in courses.items():
 
